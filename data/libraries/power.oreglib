@@ -12,12 +12,10 @@
 			<ogo:objects>
 				<ogo:line>(0 30)(7 30)</ogo:line>
 				<ogo:line>(7 10)(7 30)</ogo:line>
-
 				<ogo:line>(10 7)(10 33)</ogo:line>
 				<ogo:line>(20 0)(20 10)(10 18)(10 22)(20 30)(20 40)</ogo:line>
 				<ogo:line>(18 23)(18 28)(13 28)</ogo:line>
 			</ogo:objects>
-
 			<ogo:connections>
 				<ogo:connection>(20 0)</ogo:connection>
 				<ogo:connection>(0 30)</ogo:connection>
@@ -30,12 +28,10 @@
 			<ogo:objects>
 				<ogo:line>(0 30)(7 30)</ogo:line>
 				<ogo:line>(7 10)(7 30)</ogo:line>
-
 				<ogo:line>(10 7)(10 33)</ogo:line>
 				<ogo:line>(20 0)(20 10)(10 18)(10 22)(20 30)(20 40)</ogo:line>
 				<ogo:line>(18 24)(13 24)(13 29)</ogo:line>
 			</ogo:objects>
-
 			<ogo:connections>
 				<ogo:connection>(20 0)</ogo:connection>
 				<ogo:connection>(0 30)</ogo:connection>
@@ -44,7 +40,7 @@
 		</ogo:symbol>
 
 		<ogo:symbol>
-			<ogo:name>THYRISTOR</ogo:name>
+			<ogo:name>Thyristor</ogo:name>
 			<ogo:objects>
 				<ogo:line>(0 10)(10 10)</ogo:line>
 				<ogo:line>(10 5)(10 15)(17 10)(10 5)</ogo:line>
@@ -52,7 +48,6 @@
 				<ogo:line>(17 10)(30 10)</ogo:line>
 				<ogo:line>(17 12)(20 15)(20 20)</ogo:line>
 			</ogo:objects>
-
 			<ogo:connections>
 				<ogo:connection>(0 10)</ogo:connection>
 				<ogo:connection>(30 10)</ogo:connection>
@@ -133,7 +128,6 @@
 			<ogo:name>IGBT-NPN</ogo:name>
 			<ogo:symbol>IGBT-NPN</ogo:symbol>
 			<ogo:description>Insulated gate Bipolar Transistor,NPN</ogo:description>
-
 			<ogo:labels>
 				<ogo:label>
 					<ogo:name>Reference designator</ogo:name>
@@ -148,7 +142,6 @@
 					<ogo:modify>yes</ogo:modify>
 				</ogo:label>
 			</ogo:labels>
-
 			<ogo:properties>
 				<ogo:property>
 					<ogo:name>Refdes</ogo:name>
@@ -165,12 +158,10 @@
 			</ogo:properties>
 		</ogo:part>
 
-
 		<ogo:part>
 			<ogo:name>IGBT-PNP</ogo:name>
 			<ogo:symbol>IGBT-PNP</ogo:symbol>
 			<ogo:description>Insulated gate Bipolar Transitor,PNP</ogo:description>
-
 			<ogo:labels>
 				<ogo:label>
 					<ogo:name>Reference designator</ogo:name>
@@ -185,7 +176,6 @@
 					<ogo:modify>yes</ogo:modify>
 				</ogo:label>
 			</ogo:labels>
-
 			<ogo:properties>
 				<ogo:property>
 					<ogo:name>Refdes</ogo:name>
@@ -222,7 +212,6 @@
 					<ogo:modify>yes</ogo:modify>
 				</ogo:label>
 			</ogo:labels>
-
 			<ogo:properties>
 				<ogo:property>
 					<ogo:name>Refdes</ogo:name>
@@ -243,7 +232,6 @@
 			<ogo:name>GTO</ogo:name>
 			<ogo:symbol>GTO</ogo:symbol>
 			<ogo:description>Gate Turn-Off Thyristor</ogo:description>
-
 			<ogo:labels>
 				<ogo:label>
 					<ogo:name>Reference designator</ogo:name>
@@ -258,7 +246,6 @@
 					<ogo:modify>yes</ogo:modify>
 				</ogo:label>
 			</ogo:labels>
-
 			<ogo:properties>
 				<ogo:property>
 					<ogo:name>Refdes</ogo:name>
