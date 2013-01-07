@@ -11,7 +11,6 @@ resources = Split ("""
 	miscellaneous.oreglib
 	opamplib.oreglib
 	peripheral.oreglib
-	power.oreglib
 	ttl.oreglib
 	""")
 
