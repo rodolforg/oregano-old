@@ -4473,58 +4473,6 @@
       </ogo:properties>
     </ogo:part>
 
-    <ogo:part>
-      <ogo:name>12AX7 (b)</ogo:name>
-      <ogo:symbol>Triode2</ogo:symbol>
-      <ogo:description>1/2 12AX7 Vacuum tube</ogo:description>
-      <ogo:labels>
-        <ogo:label>
-          <ogo:name>Reference designator</ogo:name>
-          <ogo:text>@refdes</ogo:text>
-          <ogo:position>(15 -27)</ogo:position>
-          <ogo:modify>yes</ogo:modify>
-        </ogo:label>
-        <ogo:label>
-          <ogo:name>p</ogo:name>
-          <ogo:text>6</ogo:text>
-          <ogo:position>(34 -29)</ogo:position>
-          <ogo:modify>no</ogo:modify>
-        </ogo:label>
-        <ogo:label>
-          <ogo:name>g</ogo:name>
-          <ogo:text>7</ogo:text>
-          <ogo:position>(5 -2)</ogo:position>
-          <ogo:modify>no</ogo:modify>
-        </ogo:label>
-        <ogo:label>
-          <ogo:name>c</ogo:name>
-          <ogo:text>8</ogo:text>
-          <ogo:position>(62 30)</ogo:position>
-          <ogo:modify>no</ogo:modify>
-        </ogo:label>
-        <ogo:label>
-          <ogo:name>Model</ogo:name>
-          <ogo:text>@model</ogo:text>
-          <ogo:position>(45 -27)</ogo:position>
-          <ogo:modify>no</ogo:modify>
-        </ogo:label>
-      </ogo:labels>
-      <ogo:properties>
-        <ogo:property>
-          <ogo:name>Refdes</ogo:name>
-          <ogo:value>V</ogo:value>
-        </ogo:property>
-        <ogo:property>
-          <ogo:name>Model</ogo:name>
-          <ogo:value>12AX7A(b)</ogo:value>
-        </ogo:property>
-        <ogo:property>
-          <ogo:name>Template</ogo:name>
-          <ogo:value>XV_@refdes %c %g %p @model</ogo:value>
-        </ogo:property>
-      </ogo:properties>
-    </ogo:part>
-
 </ogo:parts>
 
 </ogo:library>

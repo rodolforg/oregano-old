@@ -798,18 +798,66 @@
    <ogo:symbol>
       <ogo:name>OPAMP</ogo:name>
       <ogo:objects>
-        <ogo:line>(0 0)(0 40)(30 20)(0 0)</ogo:line>
-        <ogo:line>(-10 10)(0 10)</ogo:line>
-        <ogo:line>(-10 30)(0 30)</ogo:line>
-        <ogo:line>(30 20)(40 20)</ogo:line>
+        <ogo:line>(0 0)(0 40)(40 20)(0 0)</ogo:line>
+        <ogo:line>(-20 10)(0 10)</ogo:line>
+        <ogo:line>(-20 30)(0 30)</ogo:line>
+        <ogo:line>(40 20)(60 20)</ogo:line>
         <ogo:line>(5 10)(10 10)</ogo:line>
         <ogo:line>(5 30)(10 30)</ogo:line>
         <ogo:line>(7.5 27.5)(7.5 32.5)</ogo:line>
       </ogo:objects>
       <ogo:connections>
-        <ogo:connection>(40 20 6)</ogo:connection>
-        <ogo:connection>(-10 10 2)</ogo:connection>
-        <ogo:connection>(-10 30 3)</ogo:connection>
+        <ogo:connection>(-20 30 5)</ogo:connection>
+        <ogo:connection>(-20 10 4)</ogo:connection>
+        <ogo:connection>(60 20 2)</ogo:connection>
+      </ogo:connections>
+    </ogo:symbol>
+
+   <ogo:symbol>
+      <ogo:name>OPAMPP</ogo:name>
+      <ogo:objects>
+        <ogo:line>(0 0)(0 40)(40 20)(0 0)</ogo:line>
+        <ogo:line>(-20 10)(0 10)</ogo:line>
+        <ogo:line>(-20 30)(0 30)</ogo:line>
+        <ogo:line>(40 20)(60 20)</ogo:line>
+        <ogo:line>(20 10)(20 -10)</ogo:line>
+        <ogo:line>(20 30)(20 50)</ogo:line>
+        <ogo:line>(5 10)(10 10)</ogo:line>
+        <ogo:line>(5 30)(10 30)</ogo:line>
+        <ogo:line>(7.5 27.5)(7.5 32.5)</ogo:line>
+      </ogo:objects>
+      <ogo:connections>
+        <ogo:connection>(-20 30 5)</ogo:connection>
+        <ogo:connection>(-20 10 4)</ogo:connection>
+        <ogo:connection>(20 -10 3)</ogo:connection>
+        <ogo:connection>(20 50 12)</ogo:connection>
+        <ogo:connection>(60 20 2)</ogo:connection>
+      </ogo:connections>
+    </ogo:symbol>
+
+   <ogo:symbol>
+      <ogo:name>OPAMPPS</ogo:name>
+      <ogo:objects>
+        <ogo:line>(0 0)(0 40)(40 20)(0 0)</ogo:line>
+        <ogo:line>(-20 10)(0 10)</ogo:line>
+        <ogo:line>(-20 30)(0 30)</ogo:line>
+        <ogo:line>(40 20)(60 20)</ogo:line>
+        <ogo:line>(10 5)(10 -10)</ogo:line>
+        <ogo:line>(20 30)(20 50)</ogo:line>
+        <ogo:line>(10 35)(10 50)</ogo:line>
+        <ogo:line>(30 25)(30 50)</ogo:line>
+        <ogo:line>(5 10)(10 10)</ogo:line>
+        <ogo:line>(5 30)(10 30)</ogo:line>
+        <ogo:line>(7.5 27.5)(7.5 32.5)</ogo:line>
+      </ogo:objects>
+      <ogo:connections>
+        <ogo:connection>(-20 30 3)</ogo:connection>
+        <ogo:connection>(-20 10 2)</ogo:connection>
+        <ogo:connection>(10 -10 7)</ogo:connection>
+        <ogo:connection>(10 50 4)</ogo:connection>
+        <ogo:connection>(20 50 1)</ogo:connection>
+        <ogo:connection>(30 50 5)</ogo:connection>
+        <ogo:connection>(60 20 6)</ogo:connection>
       </ogo:connections>
     </ogo:symbol>
 
@@ -2989,9 +3037,9 @@
     </ogo:part>
 
     <ogo:part>
-      <ogo:name>Ideal OP</ogo:name>
+      <ogo:name>OPAMP</ogo:name>
       <ogo:symbol>OPAMP</ogo:symbol>
-      <ogo:description>Ideal operation amplifier</ogo:description>
+      <ogo:description>Operational amplifier</ogo:description>
       <ogo:labels>
         <ogo:label>
           <ogo:name>Reference designator</ogo:name>
@@ -3012,12 +3060,80 @@
           <ogo:value>U</ogo:value>
         </ogo:property>
         <ogo:property>
-          <ogo:name>Mhos</ogo:name>
-          <ogo:value>100</ogo:value>
+          <ogo:name>Model</ogo:name>
+          <ogo:value>OPAMP</ogo:value>
         </ogo:property>
         <ogo:property>
           <ogo:name>Template</ogo:name>
           <ogo:value>G_@refdes %out 0 %in- %in+ @model</ogo:value>
+        </ogo:property>
+      </ogo:properties>
+    </ogo:part>
+
+    <ogo:part>
+      <ogo:name>OPAMP+P</ogo:name>
+      <ogo:symbol>OPAMPP</ogo:symbol>
+      <ogo:description>Operational amplifier + power supply</ogo:description>
+      <ogo:labels>
+        <ogo:label>
+          <ogo:name>Reference designator</ogo:name>
+          <ogo:text>@refdes</ogo:text>
+          <ogo:position>(20 0)</ogo:position>
+          <ogo:modify>yes</ogo:modify>
+        </ogo:label>
+        <ogo:label>
+          <ogo:name>Model</ogo:name>
+          <ogo:text>@model</ogo:text>
+          <ogo:position>(40 40)</ogo:position>
+          <ogo:modify>yes</ogo:modify>
+        </ogo:label>
+      </ogo:labels>
+      <ogo:properties>
+        <ogo:property>
+          <ogo:name>Refdes</ogo:name>
+          <ogo:value>U</ogo:value>
+        </ogo:property>
+        <ogo:property>
+          <ogo:name>Model</ogo:name>
+          <ogo:value>OPAMP</ogo:value>
+        </ogo:property>
+        <ogo:property>
+          <ogo:name>Template</ogo:name>
+          <ogo:value>X_@refdes %in+ %in- %V+ %V- %out @model</ogo:value>
+        </ogo:property>
+      </ogo:properties>
+    </ogo:part>
+
+    <ogo:part>
+      <ogo:name>OPAMP+P+S</ogo:name>
+      <ogo:symbol>OPAMPPS</ogo:symbol>
+      <ogo:description>Operational amplifier + power + offset</ogo:description>
+      <ogo:labels>
+        <ogo:label>
+          <ogo:name>Reference designator</ogo:name>
+          <ogo:text>@refdes</ogo:text>
+          <ogo:position>(20 0)</ogo:position>
+          <ogo:modify>yes</ogo:modify>
+        </ogo:label>
+        <ogo:label>
+          <ogo:name>Model</ogo:name>
+          <ogo:text>@model</ogo:text>
+          <ogo:position>(40 40)</ogo:position>
+          <ogo:modify>yes</ogo:modify>
+        </ogo:label>
+      </ogo:labels>
+      <ogo:properties>
+        <ogo:property>
+          <ogo:name>Refdes</ogo:name>
+          <ogo:value>U</ogo:value>
+        </ogo:property>
+        <ogo:property>
+          <ogo:name>Model</ogo:name>
+          <ogo:value>OPAMP</ogo:value>
+        </ogo:property>
+        <ogo:property>
+          <ogo:name>Template</ogo:name>
+          <ogo:value>X_@refdes %in+ %in- %V+ %V- %Vo+ %Vo- %out @model</ogo:value>
         </ogo:property>
       </ogo:properties>
     </ogo:part>
@@ -3083,9 +3199,9 @@
     </ogo:part>
 
     <ogo:part>
-      <ogo:name>Valve Triode</ogo:name>
+      <ogo:name>Valve Triode + Heating</ogo:name>
       <ogo:symbol>Triode</ogo:symbol>
-      <ogo:description>Vacuum Tube Triode</ogo:description>
+      <ogo:description>Vacuum Tube Triode with heating</ogo:description>
       <ogo:labels>
         <ogo:label>
           <ogo:name>Reference designator</ogo:name>
@@ -3148,6 +3264,58 @@
         <ogo:property>
           <ogo:name>Template</ogo:name>
           <ogo:value>XV_@refdes %c %g %p %h1 %h2 %h3 @model</ogo:value>
+        </ogo:property>
+      </ogo:properties>
+    </ogo:part>
+
+    <ogo:part>
+      <ogo:name>Valve Triode</ogo:name>
+      <ogo:symbol>Triode2</ogo:symbol>
+      <ogo:description>Vacuum Tube Triode</ogo:description>
+      <ogo:labels>
+        <ogo:label>
+          <ogo:name>Reference designator</ogo:name>
+          <ogo:text>@refdes</ogo:text>
+          <ogo:position>(15 -27)</ogo:position>
+          <ogo:modify>yes</ogo:modify>
+        </ogo:label>
+        <ogo:label>
+          <ogo:name>p</ogo:name>
+          <ogo:text>6</ogo:text>
+          <ogo:position>(34 -29)</ogo:position>
+          <ogo:modify>no</ogo:modify>
+        </ogo:label>
+        <ogo:label>
+          <ogo:name>g</ogo:name>
+          <ogo:text>7</ogo:text>
+          <ogo:position>(5 -2)</ogo:position>
+          <ogo:modify>no</ogo:modify>
+        </ogo:label>
+        <ogo:label>
+          <ogo:name>c</ogo:name>
+          <ogo:text>8</ogo:text>
+          <ogo:position>(62 30)</ogo:position>
+          <ogo:modify>no</ogo:modify>
+        </ogo:label>
+        <ogo:label>
+          <ogo:name>Model</ogo:name>
+          <ogo:text>@model</ogo:text>
+          <ogo:position>(45 -27)</ogo:position>
+          <ogo:modify>no</ogo:modify>
+        </ogo:label>
+      </ogo:labels>
+      <ogo:properties>
+        <ogo:property>
+          <ogo:name>Refdes</ogo:name>
+          <ogo:value>V</ogo:value>
+        </ogo:property>
+        <ogo:property>
+          <ogo:name>Model</ogo:name>
+          <ogo:value>12AX7A(b)</ogo:value>
+        </ogo:property>
+        <ogo:property>
+          <ogo:name>Template</ogo:name>
+          <ogo:value>XV_@refdes %c %g %p @model</ogo:value>
         </ogo:property>
       </ogo:properties>
     </ogo:part>
