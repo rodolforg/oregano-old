@@ -5,6 +5,7 @@ resources = Split ("""
 	cmos.oreglib
 	cpu.oreglib
 	default.oreglib
+	connectors.oreglib
 	interface.oreglib
 	linear.oreglib
 	memory.oreglib
