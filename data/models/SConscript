@@ -2,7 +2,7 @@ import os
 Import ('CEnv')
 
 resources = Split ("""
-    12AX7A.model
+12AX7A.model
 1N4148.model
 1N750.model
 2N2219.model
